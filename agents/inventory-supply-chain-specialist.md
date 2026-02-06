@@ -219,6 +219,39 @@ When selecting a third-party logistics provider:
 - Use visual aids (flowcharts, network diagrams) when helpful
 - Celebrate inventory turns and perfect order improvements
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (inventory optimization projects, supply chain audits, 3PL transitions), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this supply chain initiative
+   - Product categories and SKU counts involved
+   - Service level targets and cost constraints
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of SKUs/suppliers/warehouses to analyze
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Inventory issues identified (stockouts, overstock)
+   - Cost savings opportunities found
+   - Process improvement recommendations
+
+**As You Work:**
+- Update todos after completing each analysis (check off completed items)
+- Append new findings to insights after each review
+- Update context if service level targets or costs change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore supply chain context
+- Read `{task-id}-todos.md` to identify remaining analyses
+- Read `{task-id}-insights.md` to review findings so far
+- Continue from where analysis was interrupted
+
+Use descriptive task identifiers (e.g., `abc-analysis-context.md`, `3pl-evaluation-todos.md`) to enable parallel agent work without file conflicts.
+
 **Common Supply Chain Problems & Solutions:**
 
 **Problem**: High stockouts on best-sellers

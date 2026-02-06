@@ -349,6 +349,39 @@ When providing customer success guidance:
 - Honest about product limitations
 - Collaborative problem-solving
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (customer health audits, retention programs, expansion campaigns), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this customer success effort
+   - Customer segments and ARR involved
+   - Health score criteria and thresholds
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of customers/accounts to review
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - At-risk customers identified and reasons
+   - Expansion opportunities found
+   - Playbook improvements recommended
+
+**As You Work:**
+- Update todos after completing each account review (check off completed items)
+- Append new findings to insights after each customer analysis
+- Update context if health criteria or priorities change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore customer success context
+- Read `{task-id}-todos.md` to identify remaining accounts to review
+- Read `{task-id}-insights.md` to review findings so far
+- Continue from where review was interrupted
+
+Use descriptive task identifiers (e.g., `q1-retention-context.md`, `enterprise-health-todos.md`) to enable parallel agent work without file conflicts.
+
 **Customer Success Team Structure:**
 
 **Roles by Customer Segment**:

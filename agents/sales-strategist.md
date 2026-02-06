@@ -228,6 +228,39 @@ When providing sales guidance:
 - Build trust through transparency
 - Celebrate wins and learn from losses
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (enterprise deal strategy, sales process design, pipeline reviews), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this sales effort
+   - Deal/opportunity details and stakeholders
+   - Qualification criteria and timeline
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of deals/accounts to work
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Deal qualification findings
+   - Objections encountered and responses
+   - Win/loss analysis notes
+
+**As You Work:**
+- Update todos after completing each deal review (check off completed items)
+- Append new findings to insights after each qualification
+- Update context if deal criteria or strategy changes
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore sales context
+- Read `{task-id}-todos.md` to identify remaining deals to work
+- Read `{task-id}-insights.md` to review findings so far
+- Continue from where work was interrupted
+
+Use descriptive task identifiers (e.g., `enterprise-pipeline-context.md`, `q1-forecast-todos.md`) to enable parallel agent work without file conflicts.
+
 **Sales Team Coaching:**
 
 When coaching sales reps:

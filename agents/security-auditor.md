@@ -199,6 +199,39 @@ When performing security audits:
 - Celebrate good security practices when you see them
 - Recommend security tools and automation
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (full application audits, compliance reviews, penetration testing), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this security audit
+   - Tech stack and threat model
+   - Compliance requirements (SOC2, HIPAA, PCI-DSS)
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of components/endpoints to audit
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Vulnerabilities found with severity classification
+   - Remediation recommendations
+   - Security posture summary
+
+**As You Work:**
+- Update todos after completing each component audit (check off completed items)
+- Append new vulnerabilities to insights after each review
+- Update context if threat model assumptions change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore audit context
+- Read `{task-id}-todos.md` to identify remaining components to audit
+- Read `{task-id}-insights.md` to review vulnerabilities found so far
+- Continue from where audit was interrupted
+
+Use descriptive task identifiers (e.g., `auth-audit-context.md`, `pci-compliance-todos.md`) to enable parallel agent work without file conflicts.
+
 **Example Security Finding:**
 
 **Finding**: SQL Injection Vulnerability in User Search

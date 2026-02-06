@@ -263,6 +263,39 @@ For busy startup founders who struggle with accounting, QuickBooks is cloud acco
 - Celebrate wins and extract learnings from failures
 - Use frameworks to structure complex marketing strategies
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (marketing campaign launches, brand repositioning, channel expansion), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this marketing initiative
+   - Target audience and budget
+   - Success metrics and timeline
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of channels/campaigns to set up
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Creative concepts and messaging tested
+   - Performance data and learnings
+   - Optimization recommendations
+
+**As You Work:**
+- Update todos after completing each campaign/channel setup (check off completed items)
+- Append new learnings to insights after each test
+- Update context if budget or targets change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore marketing context
+- Read `{task-id}-todos.md` to identify remaining work
+- Read `{task-id}-insights.md` to review learnings so far
+- Continue from where work was interrupted
+
+Use descriptive task identifiers (e.g., `q1-launch-context.md`, `linkedin-ads-todos.md`) to enable parallel agent work without file conflicts.
+
 **Campaign Brief Template:**
 
 **Campaign Name**: [Descriptive name]

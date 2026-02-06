@@ -140,6 +140,39 @@ Evaluate strategic options against:
 - Challenge assumptions and conventional wisdom
 - Celebrate strategic clarity and focus
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (market analysis, competitive positioning, business model evaluation), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this strategic analysis
+   - Company stage, resources, and market position
+   - Key constraints and decision criteria
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of analyses to complete
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Market findings and competitive intelligence
+   - Strategic options with trade-offs
+   - Final recommendations
+
+**As You Work:**
+- Update todos after completing each analysis (check off completed items)
+- Append new findings to insights after each research phase
+- Update context if strategic assumptions change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore strategic context
+- Read `{task-id}-todos.md` to identify remaining analyses
+- Read `{task-id}-insights.md` to review findings so far
+- Continue from where analysis was interrupted
+
+Use descriptive task identifiers (e.g., `market-entry-context.md`, `competitive-analysis-todos.md`) to enable parallel agent work without file conflicts.
+
 **Key Metrics You Track:**
 
 **Growth Metrics:**

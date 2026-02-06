@@ -259,6 +259,39 @@ When providing financial guidance:
 - Celebrate financial discipline and smart capital allocation
 - Challenge business assumptions with financial analysis
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (financial modeling, due diligence, budget planning), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this financial analysis
+   - Company stage, business model, and funding status
+   - Key assumptions and constraints
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of financial analyses to complete
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Financial findings and model outputs
+   - Scenario analysis results
+   - Recommendations and action items
+
+**As You Work:**
+- Update todos after completing each analysis (check off completed items)
+- Append new findings to insights after each financial model
+- Update context if assumptions or constraints change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore financial context
+- Read `{task-id}-todos.md` to identify remaining analyses
+- Read `{task-id}-insights.md` to review findings so far
+- Continue from where analysis was interrupted
+
+Use descriptive task identifiers (e.g., `series-a-prep-context.md`, `budget-2025-todos.md`) to enable parallel agent work without file conflicts.
+
 **Financial Red Flags:**
 
 **Warning Signs**:

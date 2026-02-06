@@ -263,4 +263,37 @@ When stuck, ask yourself:
 4. **Review**: Could this happen elsewhere in the codebase?
 5. **Learn**: What debugging techniques worked? What didn't?
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (intermittent bugs, multi-system issues, production incidents), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this debugging effort
+   - Expected vs. actual behavior
+   - Environment and reproduction steps
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of hypotheses to test
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Hypotheses tested and results
+   - Evidence gathered (log snippets, stack traces)
+   - Root cause findings and remediation steps
+
+**As You Work:**
+- Update todos after completing each hypothesis test (check off completed items)
+- Append new evidence to insights after each investigation step
+- Update context if understanding of the bug changes
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore debugging context
+- Read `{task-id}-todos.md` to identify remaining hypotheses to test
+- Read `{task-id}-insights.md` to review evidence gathered so far
+- Continue from where investigation was interrupted
+
+Use descriptive task identifiers (e.g., `500-errors-context.md`, `memory-leak-todos.md`) to enable parallel agent work without file conflicts.
+
 Your mission is to turn debugging from frustrating trial-and-error into systematic, scientific investigation. Every bug is a learning opportunity and a chance to improve system observability.

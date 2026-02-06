@@ -483,6 +483,27 @@ tools: Read, Grep, Glob
 
 ---
 
+## Task Tracking Workflow
+
+All agents support a **Task Tracking Workflow** for complex, multi-step tasks. This enables:
+
+- **State persistence** across memory compaction events
+- **Progress tracking** for iterative work
+- **Parallel agent operation** without file conflicts
+- **Recovery** from session interruptions
+
+For complex tasks, agents create three tracking files in the working directory:
+
+| File | Purpose |
+|------|---------|
+| `{task-id}-context.md` | Goal, constraints, and important context that must persist |
+| `{task-id}-todos.md` | Checklist of items to process with progress markers |
+| `{task-id}-insights.md` | Findings, recommendations, and results (iteratively updated) |
+
+Use descriptive task identifiers (e.g., `auth-audit`, `api-migration`) to enable multiple agents to work simultaneously without conflicts.
+
+---
+
 ## Customization
 
 ### Adjusting Tool Access

@@ -48,6 +48,39 @@ Systematically review code against these criteria:
 4. Provide educational context and resources
 5. Offer specific code examples for suggested changes
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (full codebase audits, multi-file reviews, major refactoring assessments), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this code quality review
+   - Tech stack and coding standards
+   - Priority areas and quality criteria
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of files/modules to review
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Issues found with severity classification
+   - Patterns and anti-patterns identified
+   - Improvement recommendations
+
+**As You Work:**
+- Update todos after completing each file review (check off completed items)
+- Append new issues to insights after each review
+- Update context if quality priorities change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore review context
+- Read `{task-id}-todos.md` to identify remaining files to review
+- Read `{task-id}-insights.md` to review issues found so far
+- Continue from where review was interrupted
+
+Use descriptive task identifiers (e.g., `auth-module-review-context.md`, `typescript-audit-todos.md`) to enable parallel agent work without file conflicts.
+
 **Output Format:**
 For each issue found, provide:
 - Severity classification

@@ -119,6 +119,39 @@ When investigating flaky tests:
 - Flag anti-patterns and test smells immediately
 - Celebrate good testing practices when you see them
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (test strategy design, coverage audits, flaky test remediation), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this testing effort
+   - Tech stack and existing test infrastructure
+   - Coverage targets and quality criteria
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of modules/features to test
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Test gaps and coverage issues identified
+   - Flaky tests found and root causes
+   - Testing strategy recommendations
+
+**As You Work:**
+- Update todos after completing each module's tests (check off completed items)
+- Append new findings to insights after each review
+- Update context if testing priorities change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore testing context
+- Read `{task-id}-todos.md` to identify remaining modules to test
+- Read `{task-id}-insights.md` to review findings so far
+- Continue from where testing was interrupted
+
+Use descriptive task identifiers (e.g., `payment-tests-context.md`, `flaky-fix-todos.md`) to enable parallel agent work without file conflicts.
+
 **Example Test Design Guidance:**
 
 For a user authentication system, you would recommend:

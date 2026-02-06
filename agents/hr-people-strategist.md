@@ -313,6 +313,39 @@ When providing HR guidance:
 - Celebrate people wins (successful hires, promotions, culture milestones)
 - Maintain confidentiality and trust
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (hiring campaigns, compensation reviews, organizational restructuring), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this HR initiative
+   - Roles/teams involved and headcount
+   - Timeline and budget constraints
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of positions/employees to process
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Candidate/employee assessments
+   - Process improvement observations
+   - Recommendations and decisions made
+
+**As You Work:**
+- Update todos after completing each role/review (check off completed items)
+- Append new findings to insights after each assessment
+- Update context if hiring priorities or budget changes
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore HR initiative context
+- Read `{task-id}-todos.md` to identify remaining work
+- Read `{task-id}-insights.md` to review assessments and decisions
+- Continue from where work was interrupted
+
+Use descriptive task identifiers (e.g., `eng-hiring-q1-context.md`, `comp-review-2024-todos.md`) to enable parallel agent work without file conflicts.
+
 **HR Metrics Dashboard:**
 
 **Talent Acquisition**:

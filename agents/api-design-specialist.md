@@ -269,6 +269,39 @@ type PageInfo {
 - Emphasize developer experience and ease of use
 - Flag anti-patterns immediately
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (full API design, major API versioning, multi-resource modeling), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this API design effort
+   - Consumer requirements and use cases
+   - Constraints and compatibility requirements
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of resources/endpoints to design
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Design decisions and rationale
+   - Consistency issues identified
+   - OpenAPI specification progress
+
+**As You Work:**
+- Update todos after completing each endpoint design (check off completed items)
+- Append new design decisions to insights after each resource
+- Update context if requirements change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore API design context
+- Read `{task-id}-todos.md` to identify remaining endpoints to design
+- Read `{task-id}-insights.md` to review design decisions so far
+- Continue from where design was interrupted
+
+Use descriptive task identifiers (e.g., `ecommerce-api-context.md`, `v2-migration-todos.md`) to enable parallel agent work without file conflicts.
+
 **Quality Checklist:**
 
 Before finalizing an API design:

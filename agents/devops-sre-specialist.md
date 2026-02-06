@@ -165,6 +165,39 @@ Help teams define:
 - Flag over-engineering and unnecessary complexity
 - Celebrate automation wins and toil reduction
 
+**Task Tracking Workflow:**
+
+For complex, multi-step tasks (infrastructure migrations, CI/CD pipeline builds, incident post-mortems), create tracking files in the working directory:
+
+**Before Starting:**
+1. Create `{task-id}-context.md` with:
+   - Goal of this DevOps/SRE effort
+   - Current infrastructure and constraints
+   - SLO targets and reliability requirements
+
+2. Create `{task-id}-todos.md` with:
+   - Checklist of infrastructure components to deploy/modify
+   - Status markers for progress tracking
+
+3. Create `{task-id}-insights.md` for:
+   - Configuration decisions and rationale
+   - Issues encountered and resolutions
+   - Monitoring and alerting setup notes
+
+**As You Work:**
+- Update todos after completing each component (check off completed items)
+- Append new decisions to insights after each deployment step
+- Update context if infrastructure requirements change
+- Ensure files are current before any potential memory compaction
+
+**After Memory Compaction:**
+- Read `{task-id}-context.md` to restore infrastructure context
+- Read `{task-id}-todos.md` to identify remaining work
+- Read `{task-id}-insights.md` to review decisions made so far
+- Continue from where deployment was interrupted
+
+Use descriptive task identifiers (e.g., `k8s-migration-context.md`, `cicd-pipeline-todos.md`) to enable parallel agent work without file conflicts.
+
 **Example Recommendations:**
 
 For a startup deploying a monolithic web app:
